@@ -1,96 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Alpha Platform Creator</title>
+<title>My Web & App Creation Services</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-
 body {
-font-family: Arial, sans-serif;
-margin: 0;
-background: black;
-color: white;
+    font-family: Arial;
+    margin: 0;
+    background-color: #f2f2f2;
 }
 
 header {
-background: linear-gradient(to right,#00c6ff,#0072ff);
-padding: 40px 20px;
-text-align: center;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 nav {
-background: #111;
-text-align: center;
-padding: 10px;
+    background-color: #333;
+    text-align: center;
 }
 
 nav a {
-color: white;
-margin: 10px;
-text-decoration: none;
-font-weight: bold;
+    color: white;
+    padding: 12px;
+    display: inline-block;
+    text-decoration: none;
 }
 
-section {
-padding: 20px;
+nav a:hover {
+    background-color: #555;
 }
 
-.card {
-background: #111;
-margin-bottom: 20px;
-border-radius: 10px;
-overflow: hidden;
+.container {
+    padding: 15px;
 }
 
-.card img {
-width: 100%;
-display: block;
+.service {
+    background-color: white;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
 }
 
-.card h3 {
-padding: 10px;
-margin: 0;
+.service img {
+    width: 100%;
+    border-radius: 6px;
 }
 
-.card p {
-padding: 0 10px 15px;
-}
-
-.skills {
-background:#111;
-border-radius:10px;
-padding:20px;
-margin-bottom:20px;
-}
-
-.hire {
-background: #0072ff;
-text-align: center;
-padding: 30px;
-border-radius: 10px;
-margin: 20px;
+.price {
+    font-weight: bold;
+    color: green;
 }
 
 .button {
-display: inline-block;
-background: #25D366;
-color: white;
-padding: 12px 20px;
-border-radius: 8px;
-text-decoration: none;
-font-weight: bold;
-margin-top: 10px;
+    display: block;
+    background-color: #28a745;
+    color: white;
+    padding: 14px;
+    text-align: center;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.about {
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
 }
 
 footer {
-background: #111;
-text-align: center;
-padding: 20px;
-margin-top: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
 }
-
 </style>
 
 </head>
@@ -98,160 +92,79 @@ margin-top: 20px;
 <body>
 
 <header>
-
-<h1>ALPHA PLATFORM CREATOR</h1>
-
-<p>
-I Can Create Any Website, App or Platform You Need
-</p>
-
+<h1>I Create Websites & Apps</h1>
+<p>Professional Website & App Developer</p>
 </header>
 
 <nav>
-
 <a href="#">Home</a>
-<a href="#">Services</a>
-<a href="#">Projects</a>
-<a href="#">Contact</a>
-
+<a href="#services">Services</a>
+<a href="#prices">Prices</a>
+<a href="#contact">Contact</a>
 </nav>
 
-<section>
+<div class="container">
+
+<h2 id="services">My Services</h2>
+
+<div class="service">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+<h3>Website Creation</h3>
+<p>I create modern websites for businesses and individuals.</p>
+</div>
+
+<div class="service">
+<img src="https://images.unsplash.com/photo-1551650975-87deedd944c3">
+<h3>Mobile App Creation</h3>
+<p>I build simple and useful mobile applications.</p>
+</div>
+
+<div class="service">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+<h3>Business Websites</h3>
+<p>I design websites for shops, salons, schools and companies.</p>
+</div>
+
+<h2 id="prices">Price List</h2>
+
+<div class="service">
+<p>Basic Website <span class="price">GHS 50+</span></p>
+<p>Business Website <span class="price">GHS 100+</span></p>
+<p>Mobile App <span class="price">GHS 150+</span></p>
+</div>
 
 <h2>About Me</h2>
 
+<div class="about">
 <p>
-Hello! My name is Alpha.  
-I build websites, mobile apps, business systems and online platforms.
+Hello! I am a website and app developer.
+I create websites and applications for businesses,
+students, and companies.
 </p>
 
-</section>
-
-<section>
-
-<h2>My Skills</h2>
-
-<div class="skills">
-
-<p>✔ HTML Website Development</p>
-
-<p>✔ Mobile App Design</p>
-
-<p>✔ Business Website Creation</p>
-
-<p>✔ Portfolio Website Creation</p>
-
-<p>✔ Online Platform Development</p>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Services</h2>
-
-<div class="card">
-
-<img src="https://picsum.photos/400/250">
-
-<h3>Website Development</h3>
-
 <p>
-Business, school and portfolio websites.
+If you need a website or app,
+contact me today.
 </p>
-
 </div>
 
-<div class="card">
+<h2 id="contact">Contact Me</h2>
 
-<img src="https://picsum.photos/401/250">
-
-<h3>Mobile App Creation</h3>
-
-<p>
-Android apps and digital tools.
-</p>
-
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/402/250">
-
-<h3>Custom Platforms</h3>
-
-<p>
-Online systems and business tools.
-</p>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Projects</h2>
-
-<p>
-
-<a href="https://solomonalph090-ai.github.io/barbershop/" target="_blank">
-
-✔ View My Barbershop Website
-
+<a href="tel:+233503173342" class="button">
+📞 Call Me Now
 </a>
 
-<br><br>
-
-✔ Portfolio Website  
-<br>
-✔ More Projects Coming Soon
-
-</p>
-
-</section>
-
-<section>
-
-<h2>Contact Me</h2>
-
-<p>
-📞 Phone: 0503173342
-</p>
-
-<a href="https://wa.me/233503173342" class="button">
-
-Chat Me on WhatsApp
-
+<a href="https://wa.me/233503173342"
+class="button whatsapp">
+💬 WhatsApp Me
 </a>
 
-</section>
-
-<section class="hire">
-
-<h2>Hire Me To Build Your Platform</h2>
-
-<p>
-Need a website, app or system?  
-I am ready to build your project professionally.
-</p>
-
-<a href="https://wa.me/233503173342" class="button">
-
-📱 Hire Me on WhatsApp
-
-</a>
-
-</section>
+</div>
 
 <footer>
-
-<p>
-© 2026 Alpha Platform Creator
-</p>
-
+<p>Website Created By You</p>
+<p>Web & App Developer</p>
 </footer>
 
 </body>
-
 </html>
