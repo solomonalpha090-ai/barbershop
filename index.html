@@ -4,192 +4,181 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>I Create Websites & Apps</title>
-
 <style>
-
-body {
+  body{
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f5f5f5;
-}
-
-header {
-    background: #000;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 28px;
-}
-
-nav {
-    background: #222;
-    text-align: center;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 20px;
-}
-
-.service {
-    background: white;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-h2 {
-    color: #333;
-}
-
-.price {
-    font-size: 18px;
-    color: green;
-    font-weight: bold;
-}
-
-.button {
-    display: block;
-    background: green;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer {
-    background: #000;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-
+    margin:0;
+    background:#f5f5f5;
+    color:#222;
+  }
+  header{
+    background:#000;
+    color:#fff;
+    text-align:center;
+    padding:40px 20px;
+  }
+  header h1{
+    margin:0;
+    font-size:30px;
+  }
+  header p{
+    margin:12px 0 0;
+    font-size:18px;
+    line-height:1.4;
+  }
+  nav{
+    background:#222;
+    text-align:center;
+    padding:12px 10px;
+  }
+  nav a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 10px;
+    font-weight:bold;
+    font-size:15px;
+  }
+  section{
+    padding:20px;
+    max-width:900px;
+    margin:0 auto;
+  }
+  h2{
+    color:#333;
+    margin-top:0;
+  }
+  .card{
+    background:#fff;
+    padding:16px;
+    border-radius:12px;
+    margin-bottom:16px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+  }
+  .card h3{
+    margin-top:0;
+    margin-bottom:8px;
+  }
+  .price{
+    font-size:18px;
+    font-weight:bold;
+    color:green;
+    margin:8px 0;
+  }
+  .button{
+    display:block;
+    background:green;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-top:10px;
+  }
+  .project-link{
+    display:inline-block;
+    margin-top:8px;
+    color:#0b63ce;
+    font-weight:bold;
+    text-decoration:none;
+  }
+  footer{
+    background:#000;
+    color:#fff;
+    text-align:center;
+    padding:15px 10px;
+    margin-top:20px;
+  }
+  .note{
+    font-size:14px;
+    color:#555;
+    margin-top:8px;
+  }
 </style>
-
 </head>
-
 <body>
 
 <header>
-    <h1>I Create Websites & Apps</h1>
-    <p>Professional Website & App Developer</p>
+  <h1>I Create Websites & Apps</h1>
+  <p>Professional Website & App Developer</p>
 </header>
 
 <nav>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="#prices">Prices</a>
-    <a href="#contact">Contact</a>
+  <a href="#services">Home</a>
+  <a href="#services">Services</a>
+  <a href="#projects">Projects</a>
+  <a href="#prices">Prices</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <section id="services">
+  <h2>My Services</h2>
 
-<h2>My Services</h2>
+  <div class="card">
+    <h3>Website Creation</h3>
+    <p>I create modern websites for businesses and individuals.</p>
+  </div>
 
-<div class="service">
-<h3>Website Creation</h3>
-<p>I create modern websites for businesses, shops, schools and companies.</p>
-</div>
+  <div class="card">
+    <h3>Mobile App Creation</h3>
+    <p>I build simple and useful mobile applications.</p>
+  </div>
 
-<div class="service">
-<h3>Mobile App Creation</h3>
-<p>I build simple and useful mobile applications.</p>
-</div>
-
-<div class="service">
-<h3>Business Websites</h3>
-<p>I design websites for shops, salons, schools and companies.</p>
-</div>
-
+  <div class="card">
+    <h3>Business Websites</h3>
+    <p>I design websites for shops, salons, schools and companies.</p>
+  </div>
 </section>
 
 <section id="projects">
+  <h2>My Sample Projects</h2>
 
-<h2>My Sample Projects</h2>
+  <div class="card">
+    <h3>Barbershop Website</h3>
+    <p>A modern barbershop website with services, prices and contact buttons.</p>
+    <a class="project-link" href="https://solomonalpha090-ai.github.io/barbershop/" target="_blank">Open Barbershop Website</a>
+  </div>
 
-<div class="service">
-<h3>Barbershop Website</h3>
-<p>A modern website for barbershops showing services and contact details.</p>
+  <div class="card">
+    <h3>School Website</h3>
+    <p>A sample school website showing subjects, about page and contact information.</p>
+    <a class="project-link" href="school.html" target="_blank">Open School Website</a>
+  </div>
 
-<a href="#" class="button">
-View Barbershop Demo
-</a>
-
-</div>
-
-<div class="service">
-<h3>School Website</h3>
-<p>A professional website for schools showing courses and admissions.</p>
-
-<a href="#" class="button">
-View School Demo
-</a>
-
-</div>
-
+  <div class="card">
+    <h3>My Portfolio Website</h3>
+    <p>This is my main website where I show my services and contact details.</p>
+    <a class="project-link" href="#contact">Go to Contact Section</a>
+  </div>
 </section>
 
 <section id="prices">
-
-<h2>Price List</h2>
-
-<p class="price">Basic Website — GHS 50+</p>
-<p class="price">Business Website — GHS 100+</p>
-<p class="price">Mobile App — GHS 150+</p>
-
+  <h2>Price List</h2>
+  <p class="price">Basic Website — GHS 50+</p>
+  <p class="price">Business Website — GHS 100+</p>
+  <p class="price">Mobile App — GHS 150+</p>
 </section>
 
 <section>
-
-<h2>About Me</h2>
-
-<p>
-Hello! I am a website and app developer.
-I create websites and applications for businesses,
-students, and companies.
-</p>
-
-<p>
-If you need a website or app, contact me today.
-</p>
-
+  <h2>About Me</h2>
+  <p>
+    Hello! I am a website and app developer. I create websites and applications for businesses,
+    students, and companies.
+  </p>
+  <p>
+    If you need a website or app, contact me today.
+  </p>
 </section>
 
 <section id="contact">
-
-<h2>Contact Me</h2>
-
-<a href="tel:+233000000000" class="button">
-📞 Call Me Now
-</a>
-
-<a href="https://wa.me/233000000000" class="button">
-💬 WhatsApp Me
-</a>
-
+  <h2>Contact Me</h2>
+  <a href="tel:+233000000000" class="button">Call Me Now</a>
+  <a href="https://wa.me/233000000000" class="button">WhatsApp Me</a>
+  <p class="note">Replace 233000000000 with your real number.</p>
 </section>
 
 <footer>
-
-<p>
-© 2026 Website Developer | All Rights Reserved
-</p>
-
+  <p>Website Created By You — Web & App Developer</p>
 </footer>
 
 </body>
