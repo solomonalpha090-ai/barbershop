@@ -10,6 +10,8 @@
 
 <style>
 
+/* Body */
+
 body{
 margin:0;
 font-family:Arial, sans-serif;
@@ -60,10 +62,7 @@ padding:40px;
 
 .hero h1{
 font-size:28px;
-}
-
-.hero p{
-color:lightgray;
+color:cyan;
 }
 
 /* Buttons */
@@ -109,7 +108,7 @@ display:none;
 padding:30px;
 }
 
-/* WhatsApp */
+/* WhatsApp Button */
 
 .whatsapp{
 position:fixed;
@@ -169,11 +168,11 @@ ALPHA
 
 <div class="hero">
 
-<h1>Hello, I'm ALPHA 💻</h1>
+<h1 id="typing"></h1>
 
 <p>
 Young Developer from Navrongo  
-I build Websites and Apps for Businesses.
+Building Websites and Apps for Businesses.
 </p>
 
 <a href="#projects" class="btn">
@@ -316,7 +315,7 @@ Back
 <p>
 
 I am a young developer learning coding and building real projects.  
-My goal is to become a powerful software developer and create real solutions.
+My goal is to become a powerful software developer and create solutions that help people.
 
 </p>
 
@@ -330,12 +329,12 @@ My goal is to become a powerful software developer and create real solutions.
 
 <p>
 
-Phone / WhatsApp:  
+Phone / WhatsApp  
 <br><b>0503173342</b>
 
 <br><br>
 
-Location:  
+Location  
 <br>Navrongo, Ghana
 
 </p>
@@ -363,9 +362,11 @@ class="whatsapp">
 
 </a>
 
-<!-- Script -->
+<!-- JavaScript -->
 
 <script>
+
+/* Demo Controls */
 
 function showSchool(){
 
@@ -393,6 +394,28 @@ document.getElementById("barber").style.display="none";
 window.scrollTo(0,0);
 
 }
+
+/* Typing Effect */
+
+const text = "Hello, I'm ALPHA 💻 | Web Developer";
+
+let i = 0;
+
+function typing(){
+
+if(i < text.length){
+
+document.getElementById("typing").innerHTML += text.charAt(i);
+
+i++;
+
+setTimeout(typing,50);
+
+}
+
+}
+
+typing();
 
 </script>
 
