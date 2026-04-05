@@ -10,7 +10,7 @@
 
 <style>
 
-/* Moving Background */
+/* Background */
 
 body{
 margin:0;
@@ -18,39 +18,30 @@ font-family:Arial, sans-serif;
 
 background:linear-gradient(
 270deg,
-black,
 #001f1f,
-black
+#003333,
+#001f1f
 );
 
 background-size:600% 600%;
-
-animation:bgMove 12s ease infinite;
+animation:bgMove 10s ease infinite;
 
 color:white;
 scroll-behavior:smooth;
 }
 
-@keyframes bgMove {
+@keyframes bgMove{
 
-0%{
-background-position:0% 50%;
-}
-
-50%{
-background-position:100% 50%;
-}
-
-100%{
-background-position:0% 50%;
-}
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 
 }
 
 /* Navigation */
 
 nav{
-background:#000;
+background:#002222;
 padding:15px;
 text-align:center;
 position:sticky;
@@ -106,7 +97,6 @@ text-decoration:none;
 border-radius:8px;
 
 font-weight:bold;
-border:none;
 }
 
 /* Sections */
@@ -119,7 +109,7 @@ text-align:center;
 /* Cards */
 
 .card{
-background:#111;
+background:#002222;
 margin:15px;
 padding:20px;
 
@@ -128,14 +118,32 @@ border-radius:12px;
 box-shadow:0 0 12px cyan;
 }
 
-/* Demo Sections */
+/* Skills Bars */
+
+.skill{
+margin:15px;
+text-align:left;
+}
+
+.bar{
+background:#111;
+border-radius:20px;
+overflow:hidden;
+}
+
+.fill{
+background:cyan;
+padding:8px;
+}
+
+/* Demo */
 
 .demo{
 display:none;
 padding:30px;
 }
 
-/* WhatsApp Button */
+/* WhatsApp */
 
 .whatsapp{
 position:fixed;
@@ -164,7 +172,7 @@ text-decoration:none;
 .footer{
 text-align:center;
 padding:20px;
-color:gray;
+color:#ccc;
 }
 
 </style>
@@ -173,25 +181,20 @@ color:gray;
 
 <body>
 
-<!-- Navigation -->
-
 <nav>
 
 <a href="#">Home</a>
 <a href="#services">Services</a>
+<a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
 
 </nav>
 
-<!-- Logo -->
-
 <div class="logo">
 ALPHA
 </div>
-
-<!-- Hero -->
 
 <div class="hero">
 
@@ -206,10 +209,6 @@ Building Websites and Apps for Businesses.
 View Projects
 </a>
 
-<a href="tel:0503173342" class="btn">
-Call Me
-</a>
-
 </div>
 
 <!-- Services -->
@@ -219,22 +218,45 @@ Call Me
 <h2>My Services</h2>
 
 <div class="card">
-
 <h3>Website Development</h3>
-
-<p>
-Professional websites for schools, shops, and businesses.
-</p>
-
+<p>Professional websites for schools and businesses.</p>
 </div>
 
 <div class="card">
-
 <h3>Mobile App Creation</h3>
+<p>Simple Android applications.</p>
+</div>
 
-<p>
-Simple and useful Android applications.
-</p>
+</div>
+
+<!-- Skills -->
+
+<div id="skills" class="section">
+
+<h2>My Skills</h2>
+
+<div class="card">
+
+<div class="skill">
+HTML
+<div class="bar">
+<div class="fill" style="width:90%">90%</div>
+</div>
+</div>
+
+<div class="skill">
+CSS
+<div class="bar">
+<div class="fill" style="width:80%">80%</div>
+</div>
+</div>
+
+<div class="skill">
+JavaScript
+<div class="bar">
+<div class="fill" style="width:70%">70%</div>
+</div>
+</div>
 
 </div>
 
@@ -247,89 +269,52 @@ Simple and useful Android applications.
 <h2>My Projects</h2>
 
 <div class="card">
-
 <h3>School Website</h3>
-
-<p>
-Modern school website for learning institutions.
-</p>
-
-<button class="btn" onclick="showSchool()">
-View Demo
-</button>
-
+<button class="btn" onclick="showSchool()">View Demo</button>
 </div>
 
 <div class="card">
-
 <h3>Barber Website</h3>
-
-<p>
-Professional barber shop website.
-</p>
-
-<button class="btn" onclick="showBarber()">
-View Demo
-</button>
-
+<button class="btn" onclick="showBarber()">View Demo</button>
 </div>
 
 </div>
 
-<!-- School Demo -->
+<!-- School -->
 
 <div id="school" class="demo">
 
 <h2>ALPHA SCHOOL</h2>
 
-<p>Navrongo Digital School</p>
-
 <div class="card">
 
-<h3>Subjects</h3>
-
-<p>
-
-Mathematics  
+Subjects  
+<br>Mathematics  
 <br>Science  
 <br>English  
 <br>ICT
 
-</p>
+</div>
+
+<button class="btn" onclick="hideAll()">Back</button>
 
 </div>
 
-<button class="btn" onclick="hideAll()">
-Back
-</button>
-
-</div>
-
-<!-- Barber Demo -->
+<!-- Barber -->
 
 <div id="barber" class="demo">
 
 <h2>ALPHA BARBER</h2>
 
-<p>Fresh Cuts • Clean Style</p>
-
 <div class="card">
-
-<h3>Services</h3>
-
-<p>
 
 Haircut  
 <br>Beard Trim  
 <br>Modern Styles
 
-</p>
-
 </div>
 
-<button class="btn" onclick="hideAll()">
-Back
-</button>
+<button class="btn" onclick="hideAll()">Back</button>
 
 </div>
 
@@ -340,10 +325,7 @@ Back
 <h2>About ALPHA</h2>
 
 <p>
-
-I am a young developer learning coding and building real projects.  
-My goal is to become a powerful software developer and create solutions that help people.
-
+I am learning coding and building real projects to become a powerful developer.
 </p>
 
 </div>
@@ -354,33 +336,16 @@ My goal is to become a powerful software developer and create solutions that hel
 
 <h2>Contact Me</h2>
 
-<p>
-
-Phone / WhatsApp  
-<br><b>0503173342</b>
-
-<br><br>
-
-Location  
+Phone: 0503173342  
 <br>Navrongo, Ghana
 
-</p>
-
-<a href="tel:0503173342" class="btn">
-Call Now
-</a>
-
 </div>
-
-<!-- Footer -->
 
 <div class="footer">
 
-© 2026 ALPHA Developer | Navrongo
+© 2026 ALPHA Developer
 
 </div>
-
-<!-- WhatsApp Button -->
 
 <a href="https://wa.me/233503173342"
 class="whatsapp">
@@ -389,11 +354,9 @@ class="whatsapp">
 
 </a>
 
-<!-- JavaScript -->
-
 <script>
 
-/* Demo Controls */
+/* Demo */
 
 function showSchool(){
 
@@ -422,21 +385,21 @@ window.scrollTo(0,0);
 
 }
 
-/* Typing Effect */
+/* Typing */
 
-const text = "Hello, I'm ALPHA 💻 | Web Developer";
+const text="Hello, I'm ALPHA 💻 | Web Developer";
 
-let i = 0;
+let i=0;
 
 function typing(){
 
-if(i < text.length){
+if(i<text.length){
 
-document.getElementById("typing").innerHTML += text.charAt(i);
+document.getElementById("typing").innerHTML+=text.charAt(i);
 
 i++;
 
-setTimeout(typing,50);
+setTimeout(typing,40);
 
 }
 
