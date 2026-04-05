@@ -1,178 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ALPHA Developer | Navrongo</title>
+<title>Alpha Barbershop</title>
 
 <style>
 
-/* Background */
-
-body{
-margin:0;
-font-family:Arial, sans-serif;
-
-background:linear-gradient(
-270deg,
-#001f1f,
-#003333,
-#001f1f
-);
-
-background-size:600% 600%;
-animation:bgMove 10s ease infinite;
-
-color:white;
-scroll-behavior:smooth;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+  text-align: center;
 }
 
-@keyframes bgMove{
-
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
-
+/* Header Section */
+header {
+  background: black;
+  padding: 20px;
 }
 
-/* Navigation */
-
-nav{
-background:#002222;
-padding:15px;
-text-align:center;
-position:sticky;
-top:0;
+/* Profile Picture */
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid gold;
+  margin-top: 10px;
 }
 
-nav a{
-color:cyan;
-margin:10px;
-text-decoration:none;
-font-weight:bold;
+/* Title */
+h1 {
+  color: gold;
+  margin: 10px 0;
 }
 
-/* Logo */
-
-.logo{
-font-size:42px;
-font-weight:bold;
-text-align:center;
-margin-top:20px;
-
-color:cyan;
-
-text-shadow:
-0 0 10px cyan,
-0 0 20px cyan,
-0 0 40px cyan;
+/* Section Style */
+section {
+  padding: 20px;
 }
 
-/* Hero */
-
-.hero{
-text-align:center;
-padding:40px;
+/* Services Box */
+.service {
+  background: #222;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
 }
 
-.hero h1{
-font-size:28px;
-color:cyan;
-}
-
-/* Buttons */
-
-.btn{
-display:inline-block;
-margin:10px;
-padding:12px 20px;
-
-background:cyan;
-color:black;
-
-text-decoration:none;
-border-radius:8px;
-
-font-weight:bold;
-}
-
-/* Sections */
-
-.section{
-padding:30px;
-text-align:center;
-}
-
-/* Cards */
-
-.card{
-background:#002222;
-margin:15px;
-padding:20px;
-
-border-radius:12px;
-
-box-shadow:0 0 12px cyan;
-}
-
-/* Skills Bars */
-
-.skill{
-margin:15px;
-text-align:left;
-}
-
-.bar{
-background:#111;
-border-radius:20px;
-overflow:hidden;
-}
-
-.fill{
-background:cyan;
-padding:8px;
-}
-
-/* Demo */
-
-.demo{
-display:none;
-padding:30px;
-}
-
-/* WhatsApp */
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-
-background:#25D366;
-color:white;
-
-width:60px;
-height:60px;
-
-border-radius:50%;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-font-size:24px;
-
-text-decoration:none;
+/* Button */
+button {
+  background: gold;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 15px;
 }
 
 /* Footer */
-
-.footer{
-text-align:center;
-padding:20px;
-color:#ccc;
+footer {
+  background: black;
+  padding: 15px;
+  margin-top: 20px;
 }
 
 </style>
@@ -181,234 +73,46 @@ color:#ccc;
 
 <body>
 
-<nav>
+<header>
 
-<a href="#">Home</a>
-<a href="#services">Services</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-
-</nav>
-
-<div class="logo">
-ALPHA
+<div class="profile">
+<img src="alpha.png" alt="Alpha Photo">
 </div>
 
-<div class="hero">
+<h1>ALPHA BARBERSHOP</h1>
+<p>Fresh Cuts • Clean Style • Professional Look</p>
 
-<h1 id="typing"></h1>
+</header>
 
-<p>
-Young Developer from Navrongo  
-Building Websites and Apps for Businesses.
-</p>
+<section>
 
-<a href="#projects" class="btn">
-View Projects
-</a>
+<h2>Our Services</h2>
 
+<div class="service">
+<h3>Haircut</h3>
+<p>Clean and sharp haircut.</p>
 </div>
 
-<!-- Services -->
-
-<div id="services" class="section">
-
-<h2>My Services</h2>
-
-<div class="card">
-<h3>Website Development</h3>
-<p>Professional websites for schools and businesses.</p>
+<div class="service">
+<h3>Shaving</h3>
+<p>Smooth professional shaving.</p>
 </div>
 
-<div class="card">
-<h3>Mobile App Creation</h3>
-<p>Simple Android applications.</p>
+<div class="service">
+<h3>Hair Styling</h3>
+<p>Modern and classic styles.</p>
 </div>
 
-</div>
+<button>Book Appointment</button>
 
-<!-- Skills -->
+</section>
 
-<div id="skills" class="section">
+<footer>
 
-<h2>My Skills</h2>
+<p>📍 Ghana | Alpha Barbershop</p>
+<p>© 2026 Alpha Barbershop</p>
 
-<div class="card">
-
-<div class="skill">
-HTML
-<div class="bar">
-<div class="fill" style="width:90%">90%</div>
-</div>
-</div>
-
-<div class="skill">
-CSS
-<div class="bar">
-<div class="fill" style="width:80%">80%</div>
-</div>
-</div>
-
-<div class="skill">
-JavaScript
-<div class="bar">
-<div class="fill" style="width:70%">70%</div>
-</div>
-</div>
-
-</div>
-
-</div>
-
-<!-- Projects -->
-
-<div id="projects" class="section">
-
-<h2>My Projects</h2>
-
-<div class="card">
-<h3>School Website</h3>
-<button class="btn" onclick="showSchool()">View Demo</button>
-</div>
-
-<div class="card">
-<h3>Barber Website</h3>
-<button class="btn" onclick="showBarber()">View Demo</button>
-</div>
-
-</div>
-
-<!-- School -->
-
-<div id="school" class="demo">
-
-<h2>ALPHA SCHOOL</h2>
-
-<div class="card">
-
-Subjects  
-<br>Mathematics  
-<br>Science  
-<br>English  
-<br>ICT
-
-</div>
-
-<button class="btn" onclick="hideAll()">Back</button>
-
-</div>
-
-<!-- Barber -->
-
-<div id="barber" class="demo">
-
-<h2>ALPHA BARBER</h2>
-
-<div class="card">
-
-Haircut  
-<br>Beard Trim  
-<br>Modern Styles
-
-</div>
-
-<button class="btn" onclick="hideAll()">Back</button>
-
-</div>
-
-<!-- About -->
-
-<div id="about" class="section">
-
-<h2>About ALPHA</h2>
-
-<p>
-I am learning coding and building real projects to become a powerful developer.
-</p>
-
-</div>
-
-<!-- Contact -->
-
-<div id="contact" class="section">
-
-<h2>Contact Me</h2>
-
-Phone: 0503173342  
-<br>Navrongo, Ghana
-
-</div>
-
-<div class="footer">
-
-© 2026 ALPHA Developer
-
-</div>
-
-<a href="https://wa.me/233503173342"
-class="whatsapp">
-
-💬
-
-</a>
-
-<script>
-
-/* Demo */
-
-function showSchool(){
-
-document.getElementById("school").style.display="block";
-document.getElementById("barber").style.display="none";
-
-window.scrollTo(0,document.body.scrollHeight);
-
-}
-
-function showBarber(){
-
-document.getElementById("barber").style.display="block";
-document.getElementById("school").style.display="none";
-
-window.scrollTo(0,document.body.scrollHeight);
-
-}
-
-function hideAll(){
-
-document.getElementById("school").style.display="none";
-document.getElementById("barber").style.display="none";
-
-window.scrollTo(0,0);
-
-}
-
-/* Typing */
-
-const text="Hello, I'm ALPHA 💻 | Web Developer";
-
-let i=0;
-
-function typing(){
-
-if(i<text.length){
-
-document.getElementById("typing").innerHTML+=text.charAt(i);
-
-i++;
-
-setTimeout(typing,40);
-
-}
-
-}
-
-typing();
-
-</script>
+</footer>
 
 </body>
-
 </html>
