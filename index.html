@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 <title>ALPHA Portfolio</title>
@@ -24,8 +25,30 @@ text-align:center;
 header{
 background:black;
 padding:35px;
-box-shadow:0 0 10px gold;
+box-shadow:0 0 15px gold;
 }
+
+h1{
+color:gold;
+font-size:32px;
+margin:10px 0;
+}
+
+.subtitle{
+font-size:18px;
+color:#ccc;
+}
+
+/* SWEET WELCOME */
+
+.welcome{
+color:gold;
+font-size:16px;
+margin-top:10px;
+animation:fadeIn 3s ease;
+}
+
+/* PROFILE */
 
 .profile{
 width:170px;
@@ -35,23 +58,14 @@ border:5px solid gold;
 margin-top:15px;
 object-fit:cover;
 box-shadow:0 0 20px gold;
-}
-
-h1{
-color:gold;
-font-size:30px;
-margin:10px 0;
-}
-
-.subtitle{
-font-size:18px;
-color:#ccc;
+animation:zoomIn 2s ease;
 }
 
 /* SECTIONS */
 
 section{
 padding:25px;
+animation:fadeIn 2s ease;
 }
 
 /* SKILLS */
@@ -90,6 +104,7 @@ transition:0.3s;
 
 .button:hover{
 background:white;
+transform:scale(1.05);
 }
 
 /* FOOTER */
@@ -99,6 +114,30 @@ background:black;
 padding:22px;
 margin-top:30px;
 font-size:14px;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(-10px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes zoomIn{
+from{
+transform:scale(0.5);
+opacity:0;
+}
+to{
+transform:scale(1);
+opacity:1;
+}
 }
 
 </style>
@@ -115,6 +154,10 @@ font-size:14px;
 Web Developer | App Builder | Portfolio Creator
 </p>
 
+<p class="welcome">
+✨ Welcome to my digital world — where ideas become websites.
+</p>
+
 <img src="alpha.png"
 class="profile">
 
@@ -125,7 +168,7 @@ class="profile">
 <h2>About Me</h2>
 
 <p>
-My name is ALPHA from NAVRONGO, Ghana 🇬🇭  
+My name is <b>ALPHA</b> from NAVRONGO, Ghana 🇬🇭  
 
 I build professional websites and simple apps  
 for barbers, businesses, and students.
